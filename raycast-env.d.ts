@@ -14,7 +14,10 @@ declare type Preferences = ExtensionPreferences
 
 declare namespace Preferences {
   /** Preferences accessible in the `summarizemedia` command */
-  export type Summarizemedia = ExtensionPreferences & {}
+  export type Summarizemedia = ExtensionPreferences & {
+  /** API Token URL - 请输入 API Token链接 */
+  "apiTokenUrl": string
+}
 }
 
 declare namespace Arguments {
